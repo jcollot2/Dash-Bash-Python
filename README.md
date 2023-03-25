@@ -53,6 +53,8 @@ Now that the bash script is complete, we need to generate data to design the pyt
 
 In order to add a task to the Crontab, I use the following command :    `crontab -e`
 We will then modify the file to add our job :
+`*/5 * * * * cd /home/ubuntu/Dash-Bash-Python/ && /bin/bash -c ./getData.sh`
+for resume, we say to crontab, to execute each 5 min the command. And this command say to go to the project folder and then execute our bash script.
 
 ## Dash
 
