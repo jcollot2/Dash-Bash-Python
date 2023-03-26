@@ -18,18 +18,19 @@ echo "last close : $close"
 echo "variation of the day : $daymin - $daymax"
 echo "year range : $yearmin - $yearmax"
 #verification de l existance du fichier
+timestamp=$(date -d '+2 hour' '+%s')
 if [ ! -f ./data.csv ]
 then 
 	#creer un fichier csv et insert les headers et les donnees
 	{ 
 		echo "timestamp,now,close,daymin,daymax,yearmin,yearmax";
-		echo "$(date +%s),$now,$close,$daymin,$daymax,$yearmin,$yearmax"; 
+		echo "$timestamp,$now,$close,$daymin,$daymax,$yearmin,$yearmax"; 
 	} > data.csv
 else
 	#insert les headers et les donnees
 	{ 
 		cat data.csv; 
-		echo "$(date +%s),$now,$close,$daymin,$daymax,$yearmin,$yearmax"; 
+		echo "$timestamp,$now,$close,$daymin,$daymax,$yearmin,$yearmax"; 
 	} > dataBuf.csv
 	#stockage dans un buffer temporaire
 	#copie du buffer dans le fichier d origine
