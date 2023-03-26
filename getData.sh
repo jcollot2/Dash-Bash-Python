@@ -18,7 +18,7 @@ echo "last close : $close"
 echo "variation of the day : $daymin - $daymax"
 echo "year range : $yearmin - $yearmax"
 #verification de l existance du fichier
-timestamp=$(date -d '+2 hour' '+%s')
+timestamp=$(date '+%s')
 if [ ! -f ./data.csv ]
 then 
 	#creer un fichier csv et insert les headers et les donnees
