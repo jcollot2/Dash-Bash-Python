@@ -185,4 +185,4 @@ def update_graph_live(n):
 """ LANCEMENT DU SERVEUR WEB """
 
 if __name__ == '__main__':
-    app.run_server(debug=False, )
+    app.run_server(host='0.0.0.0', port='8050',debug=False, ssl_context="adhoc")
