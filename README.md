@@ -1,7 +1,7 @@
 # Dash-Bash-Python
 
 ## Virtual Machine
-
+For this project, we use amazon which offers a service to host applications on an ubuntu virtual machine in the cloud.
 ## Bash
 Our goal is to design a scraping script of a website offering financial information. For this, I chose to scrape  : [google finance](https://www.google.com/finance/quote/PX1:INDEXEURO?hl=fr) with the data of CAC 40
 
@@ -57,5 +57,9 @@ So this is the job i used :
 for resume, we say to crontab, to execute each 5 min the command. And this command say to go to the project folder and then execute our bash script.
 
 ## Dash
+We have designed a python script that will :
 
-
+ - retrieve and format the information stored in the csv file
+ - display 2 graphs, one with price variations and the other with the value of the day's closing.
+ - At 8 p.m., the program will run a script that will create the daily report and compute : Opening price, Closing price, Daily variation, Daily maximum, Daily minimum.
+ 
