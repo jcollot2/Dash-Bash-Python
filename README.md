@@ -65,5 +65,5 @@ We have designed a python script that will :
  - refresh the dashboard using interval so it is refresh every 5 minutes
  - At 8 p.m., the program will run a script that will create the daily report of the day and compute : Opening price, Closing price, Daily variation, Daily maximum, Daily minimum.
 
-http://http://13.50.224.228:8050/
+http://13.50.224.228:8050/
  
